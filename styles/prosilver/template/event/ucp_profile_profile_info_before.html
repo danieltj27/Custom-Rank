@@ -1,0 +1,10 @@
+{% if U_CUSTOM_RANK %}
+	<dl>
+		<dt>
+			<label for="user_custom_rank">{{ lang('L_CUSTOM_RANK') ~ lang('COLON') }}</label>
+			<br />
+			<span>{{ lang('L_CUSTOM_RANK_EXPLAIN') }}</span>
+		</dt>
+		<dd><input type="text" name="user_custom_rank" id="user_custom_rank" class="inputbox autowidth" size="20" maxlength="60" value="{{ USER_CUSTOM_RANK }}"></dd>
+	</dl>
+{% endif %}

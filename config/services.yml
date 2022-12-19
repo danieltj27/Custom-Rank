@@ -1,0 +1,11 @@
+services:
+    danieltj.customrank.listener:
+        class: danieltj\customrank\event\listener
+        arguments:
+            - '@auth'
+            - '@dbal.conn'
+            - '@request'
+            - '@template'
+            - '@user'
+        tags:
+            - { name: event.listener }
